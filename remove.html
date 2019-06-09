@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>delete</th>
+    </tr>
+    <tr id="row1">
+        <td>1</td>
+        <td>van</td>
+        <td><button id="btn1">delete</button>
+            <button>edit</button>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>van</td>
+        <td><button>delete</button></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>van</td>
+        <td><button>delete</button></td>
+    </tr>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#row1").remove();
+            });
+        });
+    </script>
+</table>
+</body>
+</html>
